@@ -10,6 +10,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     height: 100vh;
+    overflow: scroll;
 }
 
 header {
@@ -52,6 +53,7 @@ nav ul{
     font-family: "Inter", sans-serif;
     font-weight: 700;
     font-size: 20px;
+    margin-left: 20px;
 }
 
 #article-1 {
@@ -76,7 +78,7 @@ nav ul{
 
 /* Start of article 2 */
 
-#container-1 {
+#container-2 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -85,13 +87,13 @@ nav ul{
     margin-bottom: 5px;
 }
 
-#container-1 p {
+#container-2 p {
     margin: 5px;
 }
 
-#container-1 img {
+#container-2 img {
     width: 55vw;
-    height: 30vh;
+    height: 20vh;
     
 }
 
@@ -101,7 +103,38 @@ nav ul{
     border: 1px solid var(--primary-color);
     overflow: hidden;
 }
+/* Start of article 3 */
 
+#container-3{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fill, 100px);
+    justify-content: center;
+    border: 2px solid var(--primary-color);
+    margin: 10px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.icons {
+    margin-top: 20px;
+}
+
+.icons p {
+    margin: 5px;
+}
+
+.icon-link {
+    color: var(--primary-link);
+}
+
+.icon-link p {
+    color: var(--primary-link);
+    font-size: 18px;
+}
+
+
+/* Start of footer */
 footer {
     text-align: center;
     background-color: var(--primary-color);
