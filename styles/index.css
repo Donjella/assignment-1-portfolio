@@ -10,10 +10,11 @@ body {
     flex-direction: column;
     justify-content: space-between;
     height: 100vh;
+    width: 100vw;
     overflow: scroll;
 }
 
-header {
+#page-top {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -27,32 +28,28 @@ header {
     font-style: normal;
 }
 
-nav ul{
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
-    gap: 20px;
-    margin: 0;
-    padding: 0;
+nav ul a{
+    text-decoration: none;
     color: var(--primary-link);
+    
+}
+
+nav ul {
     font-family: "Inter", sans-serif;
     font-weight: 700;
     font-size: 18px;
-}
-
-/* main {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-bottom: 500px;
-} */
+    justify-content: center;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
 
 /* Start of article 1 */
 
 .title {
     font-family: "Inter", sans-serif;
-    font-weight: 700;
-    font-size: 20px;
     margin-left: 20px;
 }
 
@@ -69,14 +66,33 @@ nav ul{
 #article-1 img {
     border-radius: 50%;
     padding-top: 8px;
+    max-width: 50vw;
 }
 
 #article-1 p {
     width: 80vw;
     color: var(--primary-text);
+    font-family: "Inter", sans-serif;
 }
 
-/* Start of article 2 */
+.container-link a {
+    text-decoration: none;
+    color: var(--primary-link);
+    font-weight: 600;
+    font-size: 20px;
+    font-family: "Inter", sans-serif;
+    text-align: center;
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+}
+
+.items a {
+    padding: 8px;
+}
+/* Start of article 2 - Projects */
 
 #container-2 {
     display: flex;
@@ -103,41 +119,187 @@ nav ul{
     border: 1px solid var(--primary-color);
     overflow: hidden;
 }
+
+
 /* Start of article 3 */
 
 #container-3{
     display: grid;
-    grid-gap: 10px;
-    grid-template-columns: repeat(auto-fill, 100px);
+    grid-gap: 8px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     justify-content: center;
+    margin: 0 auto 20px;
     border: 2px solid var(--primary-color);
-    margin: 10px;
     text-align: center;
     border-radius: 20px;
+    width: 70%;
+    font-size: 20px;
 }
 
 .icons {
-    margin-top: 20px;
+    margin-top: 8px;
+    padding: 5px;
 }
 
 .icons p {
-    margin: 5px;
+    margin: 3px;
 }
 
-.icon-link {
+.icons a {
+    margin: 3px;
+}
+
+/* Start of article 4 */
+#container-4 {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    text-align: center;
+}
+
+#article-4 p {
+    margin: 10px;
+    text-align: center;
+    font-size: 20px;
+    font-family: "Inter", sans-serif;
+}
+
+#article-4 a{
     color: var(--primary-link);
+    font-weight: 700;
+    font-size: 20px;
+    font-family: "Inter", sans-serif;
+    text-align: center;
 }
 
-.icon-link p {
-    color: var(--primary-link);
-    font-size: 18px;
+.home-contact-items {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    flex-basis: 100px;
 }
-
-
 /* Start of footer */
 footer {
     text-align: center;
     background-color: var(--primary-color);
     color: var(--primary-text);
     padding: 5px;
+    margin-top: 20px;
+}
+
+/* Start of responsive design - Tablet */
+
+
+@media screen and (min-width: 768px) {
+
+/* Start of header */
+
+    #logo {
+        font-size: 50px;
+    }
+    nav ul {
+        gap: 60px;
+        font-size: 24px;
+    }
+
+/* Start of article-1 */
+    
+    #article-1 {
+        flex-direction: row;
+        flex-basis: 100%;
+    }
+    
+    #article-1 > * {
+        flex-basis: 100%;
+    }
+
+    #article-1 img {
+        max-width: 30vw;
+        order: 1;
+        margin-right: 50px;
+    }
+
+
+    /* Start of article 2 - Tablet - Projects */
+    
+    #container-2 {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #container-2 img {
+        width: 35vw;
+        height: 20vh;
+    }
+}
+
+/* Start of responsive design - Desktop */
+
+@media screen and (min-width: 1024px) {
+
+    /* Start of header */
+
+    #page-top {
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 8px;
+    }
+    
+        #logo {
+            font-size: 50px;
+        }
+
+        nav ul {
+            gap: 60px;
+            font-size: 25px;
+        }
+    
+    /* Start of article-1 - Desktop - Profile */
+    
+    #article-1 {
+        justify-content: center;
+    }
+    
+    #article-1 > * {
+        flex-basis: 40%;
+    }
+
+    #article-1 img {
+        max-width: 20vw;
+        order: 1;
+    }
+
+    /* Start of article 2 - Desktop - Projects */
+    
+    #container-2 {
+        flex-wrap: nowrap;
+    }
+
+    #container-2 img {
+        width: 21vw;
+        height: 30vh;
+    }
+    
+     /* Start of article 4 - Desktop - Projects */
+
+     .home-contact-items {
+        min-width: 15vw;
+     }
+
+     #article-4 i {
+        font-size: 100px;
+        margin: 10px;
+     }
+
+     #article-4 p, #article-4 a {
+        font-size: 30px;
+     }
+
+      /* Start of footer - Desktop */
+
+      footer {
+        margin-top: 30px;
+      }
+    
 }
