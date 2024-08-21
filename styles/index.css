@@ -46,12 +46,14 @@ nav ul {
     list-style-type: none;
 }
 
+
 /* Start of article 1 */
 
 .title {
     font-family: "Inter", sans-serif;
-    margin-left: 20px;
+    /* margin-left: 20px; */
     font-size: 1.5em;
+    margin: 25px 0 25px 20px;
 }
 
 #article-1 {
@@ -66,7 +68,7 @@ nav ul {
 
 #article-1 img {
     border-radius: 50%;
-    padding-top: 8px;
+    padding: 10px;
     max-width: 50vw;
 }
 
@@ -93,6 +95,16 @@ nav ul {
 .items a {
     padding: 8px;
 }
+
+article h1 {
+    margin: 0;
+    padding: 0;
+}
+
+#introduction h1{
+    color: white;
+}
+
 /* Start of article 2 - Projects */
 
 #container-2 {
@@ -211,11 +223,20 @@ footer {
         flex-basis: 100%;
         gap: 10px;
         padding: 20px;
+        justify-content: center;
+        gap: 50px;
     }
     
-    #article-1 > * {
-        flex-basis: 100%;
+    #introduction h1{
+        margin: 0;
+        max-width: 30vw;
     }
+
+    #introduction p{
+        max-width: 30vw;
+    }
+
+    
 
     #article-1 img {
         max-width: 30vw;
@@ -261,13 +282,11 @@ footer {
     
     /* Start of article-1 - Desktop - Profile */
     
-    #article-1 {
-        justify-content: center;
-    }
     
-    #article-1 > * {
-        flex-basis: 40%;
-    }
+    
+    /* #article-1 > * {
+        flex-basis: 100%;
+    } */
 
     #article-1 img {
         max-width: 20vw;
