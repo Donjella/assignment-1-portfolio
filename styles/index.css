@@ -12,6 +12,7 @@ body {
     height: 100vh;
     width: 100vw;
     overflow: scroll;
+    margin: 0;
 }
 
 #page-top {
@@ -63,6 +64,7 @@ nav ul {
     align-items: center;
     text-align: center;
     margin-top: 8px;
+
 }
 
 #article-1 img {
