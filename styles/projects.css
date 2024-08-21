@@ -1,3 +1,13 @@
+#article-1 {
+    font-size: 100px;
+    color: white;
+    font-weight: 600;
+}
+
+#article-1 h1 {
+    margin: 0;
+}
+
 .projects-main-container {
     display: flex;
     flex-direction: column;
@@ -9,7 +19,6 @@
 .project-details {
     display: flex;
     flex-direction: column;
-    gap: 5px;
 }
 
 .project-container {
@@ -19,15 +28,17 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding: 20px;
-    width: 80vw;
+    padding: 25px;
+    width: 75vw;
+    align-items: center;
 }
 
 .project-container p{
-    margin: 0px;
+    margin: 5px 0;
     font-weight: 400;
     font-family: "Inter", sans-serif;
 }
+
 
 .project-container a {
     font-weight: 600;
@@ -39,9 +50,9 @@
     color: var(--primary-link);
 }
 
-hr{
-color: black;
-width: 70vw;
+hr {
+    color: black;
+    width: 80vw;
 }
 
 .project-icon {
@@ -50,12 +61,56 @@ width: 70vw;
 }
 
 .project-container img {
-    width: 80vw;
-    height: 28vh;
+    width: 70vw;
+    height: 30vh;
+}
+
+.project-title h3{
+    margin: 1px 0 10px;
+
 }
 
 /* Start of responsive design - Tablet */
 
 @media screen and (min-width: 768px) {
+ 
+/* Start of article 1 - projects - Tablet */
+    .project-container {
+        flex-direction: row;
+        padding: 15px;
+        gap: 10px;
+        width: 85vw;
+    }
+
+    .project-details {
+        width: 50vw;
+        order: 1;
+    }
+
+    hr {
+        color: black;
+        width: 50vw;
+    }
+
+    .project-container img {
+        width: 30vw;
+        height: 25vh;
+    }
+
+/* Start of responsive design - Desktop */
+
+    .project-container {
+        align-items: center;
+        gap: 40px;
+    }
+
+    .project-container img {
+        width: 25vw;
+        height: 35vh;
+    }
+
+    .project-container p{   
+        margin: 10px 0;
+    }
 
 }
