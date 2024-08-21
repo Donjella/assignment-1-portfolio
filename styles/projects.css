@@ -1,0 +1,61 @@
+.projects-main-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.project-details {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.project-container {
+    background-color: var(--primary-background);
+    border: 2px solid var(--primary-color);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    width: 80vw;
+}
+
+.project-container p{
+    margin: 0px;
+    font-weight: 400;
+    font-family: "Inter", sans-serif;
+}
+
+.project-container a {
+    font-weight: 600;
+    font-size: 24px;
+    color: var(--primary-link);
+}
+
+.project-container i {
+    color: var(--primary-link);
+}
+
+hr{
+color: black;
+width: 70vw;
+}
+
+.project-icon {
+    display: flex;
+    gap: 15px;
+}
+
+.project-container img {
+    width: 80vw;
+    height: 28vh;
+}
+
+/* Start of responsive design - Tablet */
+
+@media screen and (min-width: 768px) {
+
+}
