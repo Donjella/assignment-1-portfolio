@@ -29,13 +29,23 @@
     justify-content: center;
 }
 
+.fa-brands {
+  font-size: 70px;
+}
+
+.icons img {
+  width: 70px;
+  height: 73.5px;
+}
+
 
 /* Start responsive design - Services - Tablet */
 @media screen and (min-width: 768px) {
   .services-container {
     font-size: 25px;
     flex-direction: row;
-    gap: 28px;
+    justify-content: space-evenly;
+    gap: 100px;
   }
 
   .services-wrapper img{
@@ -44,6 +54,16 @@
 
   .services-section {
     width: 90vw;
+  }
+
+  .fa-brands {
+    width: 70px;
+    font-size: 45px;
+  }
+
+  .icons img {
+    width: 50px;
+    height: 40px;
   }
 
 }
@@ -61,8 +81,29 @@
 
     .services-container {
         flex-direction: row;
-        flex-wrap: nowrap;
-        font-size: 20px;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+    .services-wrapper {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .fa-brands {
+      width: 70px;
+      font-size: 45px;
+    }
+
+    .icons img {
+      width: 50px;
+      height: 40px;
+    }
+
+    .services-section{
+      width: 300px;
+      margin: 0;
     }
 
 } 
