@@ -45,6 +45,7 @@
 
 #message {
     resize: vertical;
+    min-height: 5vh;
 }
 
 #submit-button {
@@ -121,30 +122,43 @@
         align-items: center;
         justify-content: center;
         gap: 30px;
-  }
+    }
 
-  #more-contact {
-    max-width: 20vw;;
-  }
+    #more-contact {
+        max-width: 20vw;;
+    }
 
-#more-contact h3{
-    font-family: "Teko", Arial, Helvetica, sans-serif;
-    text-align: center;
-}
-
-
-.social-links {
-    display: flex;
-}
-
-.fa-brands {
-margin-left: 80px;
-}
-
-.social-text {
-    margin-right: 70px;
-    text-align: center;
-}
+    #more-contact h3{
+        font-family: "Teko", Arial, Helvetica, sans-serif;
+        text-align: center;
+    }
 
 
+    .social-links {
+        display: flex;
+    }
+
+    .fa-brands {
+    margin-left: 80px;
+    }
+
+    .social-text {
+        margin-right: 70px;
+        text-align: center;
+    }
+
+    #contact-form form {
+        width: 50vw
+    }
+    #hear-about-me{
+        height: 32px;
+    }
+
+    #message, #subject, #hear-about-me {
+        width: 90%;
+    }
+
+    #fname, #lname {
+        width: 50%;
+    }
 }
