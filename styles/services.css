@@ -75,6 +75,10 @@
         font-size: 3rem;
     }
     
+    .title h1 {
+      font-size: 2rem;
+    }
+
     .icons img{
         height: 72.5px;
     }
