@@ -138,7 +138,7 @@
         display: flex;
     }
 
-    .fa-brands {
+    .social-links > .fa-brands {
     margin-left: 80px;
     }
 

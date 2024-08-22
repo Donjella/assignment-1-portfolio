@@ -1,0 +1,71 @@
+
+#article-1 h1 {
+    font-size: 2rem;
+}
+
+#article-1 {
+    display: flex;
+    align-items: center;
+    height: 73.5px; 
+}
+
+.services-section {
+    border: 2px solid var(--primary-color);
+    background-color: var(--primary-background);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60vw;
+    margin: 0 auto 50px;
+    border-radius: 25px;
+    text-align: center;
+    padding: 10px;
+}
+.services-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+}
+
+
+/* Start responsive design - Services - Tablet */
+@media screen and (min-width: 768px) {
+  .services-container {
+    font-size: 25px;
+    flex-direction: row;
+    gap: 28px;
+  }
+
+  .services-wrapper img{
+    height: 94.5px;
+  }
+
+  .services-section {
+    width: 90vw;
+  }
+
+}
+
+/* Start responsive design - Services - Desktop */
+@media screen and (min-width: 1025px) {
+   
+    #article-1 h1 {
+        font-size: 3rem;
+    }
+    
+    .icons img{
+        height: 72.5px;
+    }
+
+    .services-container {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        font-size: 20px;
+    }
+
+} 
+
+
+    

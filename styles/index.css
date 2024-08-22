@@ -97,9 +97,6 @@ nav ul {
     flex-direction: column;
 }
 
-.items a {
-    padding: 8px;
-}
 
 article h1 {
     margin: 0;
