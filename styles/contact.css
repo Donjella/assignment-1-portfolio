@@ -2,30 +2,62 @@
     font-size: 4rem;
 }
 
+/* Start of contact form */
 #contact-form form{
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 15px;
     max-width: 85vw;
-    background-color: var(--primary-background);
+    background-color: var(--primary-color);
     padding: 20px;
     margin: auto;
     border-radius: 25px;
+    color: white;
 }
-
+.form-element {
+    display: flex; 
+    flex-direction: column;
+    gap: 4px;
+}
+#contact-form input, #contact-form textarea {
+    border-radius: 10px;
+    border: 1px solid white;
+    padding: 10px;
+}
 #contact-form h3 {
     text-align: center;
     margin-bottom: 5px;
+    font-size: 28px;
+    font-family: "Teko", Arial, Helvetica, sans-serif;
 }
 
 #hear-about-me {
-    width: 40vw;
+    width: 50vw;
 }
 
 #fname, #lname {
     width: 50vw;
 }
 
+#message, #subject {
+    width: 90%;
+}
+
+#message {
+    resize: vertical;
+}
+
+#submit-button {
+    background-color: var(--primary-link);
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
+    border: 1px solid white;
+    margin-top: 5px;
+}
+
+
+/* Start of more ways to contact me */
 #more-contact {
     background-color: var(--primary-background);
     max-width: 60vw;
@@ -36,14 +68,15 @@
 }
 
 #more-contact h3{
-    padding: 5px;
-    margin: 5px;
+    text-align: center;
+    font-family: "Teko", Arial, Helvetica, sans-serif;
 }
 
 #social-links-container {
     display: flex;
     flex-direction: column;
-    flex: 1;
+    gap: 10px;
+    
 }
 
 .social-links {
@@ -65,5 +98,53 @@
     text-decoration: none;
 }
 
+/* Start of responsive design - Tablet */
+
+@media screen and (min-width: 768px) {
+    
+    #contact-form form {
+        max-width: 70vw;
+    }
+
+    #more-contact {
+        max-width: 50vw;
+    }
+
+}
 
 
+/* Start of responsive design - Desktop */
+
+@media screen and (min-width: 1025px) {
+    #desktop-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+  }
+
+  #more-contact {
+    max-width: 20vw;;
+  }
+
+#more-contact h3{
+    font-family: "Teko", Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+
+.social-links {
+    display: flex;
+}
+
+.fa-brands {
+margin-left: 80px;
+}
+
+.social-text {
+    margin-right: 70px;
+    text-align: center;
+}
+
+
+}
