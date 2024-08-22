@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brendon's Portfolio</title>
+    <link rel="stylesheet" href="../styles/index.css" class="css">
+    <link rel="stylesheet" href="../styles/projects.css" class="css">
+    <link rel="stylesheet" href="../styles/contact.css" class="css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+<body>
+    <header id="page-top">
+        <div id="logo">Brendon's Portfolio</div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./pages/about.html">About</a></li>
+                <li><a href="./pages/services.html">Services</a></li>
+                <li><a href="./pages/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article id="article-1">
+            <h1>Contact me.</h1>
+        </article>
+        <article id="contact-page">
+            <header class="title"><h1>Things I've built...</h1></header>
+            <section id="contact-form">
+                <h3>Shoot me a message straight to my inbox</h3>
+                <form action="/action_page.php">
+                    <label for="fname">First Name:</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                
+                    <label for="lname">Last Name:</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" placeholder="Your last name..">
+
+                    <label for="subject">Your Message</label>
+                    <textarea id="subject" name="subject" placeholder="Write your message here..." style="height:10vh"></textarea>
+
+                    <label for="hear-about-me">How did you hear about me?</label>
+                    <select id="hear-about-me" name="hear-about-me">
+                      <option value="google">Google</option>
+                      <option value="linkedin">Linkedin</option>
+                      <option value="github">Github</option>
+                      <option value="twitter">X.com</option>
+                    </select>
+                
+                    <input type="submit" value="Submit">
+                  </form>
+            </section>
+        </article>
+        <article>
+            <section id="more-contact">
+                <h2>More ways to reach me</h2>
+                <div id="social-links-container">
+                    <div class="social-links">
+                        <i class="fa-brands fa-github fa-3x"></i>
+                        <a href="#" class="social-text">GitHub</a>
+                    </div>
+                    <div class="social-links">
+                        <i class="fa-brands fa-linkedin fa-3x"></i>
+                        <a href="#"class="social-text">Linkedin</a> 
+                    </div>
+                    <div class="social-links">
+                        <i class="fa-brands fa-square-x-twitter fa-3x"></i>
+                        <a href="#" class="social-text">X.com</a>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
+    <footer>
+        Copyright
+    </footer>
+</body>
+</html>
