@@ -196,6 +196,7 @@ article h1 {
     padding: 5px;
     flex-basis: 100px;
 }
+
 /* Start of footer */
 footer {
     text-align: center;
@@ -309,6 +310,9 @@ footer {
     }
     
      /* Start of article 4 - Desktop - Projects */
+     .title h1 {
+        font-size: 2rem;
+      }
 
      .home-contact-items {
         min-width: 15vw;
