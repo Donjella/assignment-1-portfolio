@@ -2,6 +2,7 @@
     font-size: 4rem;
 }
 
+
 /* Start of contact form */
 #contact-form form{
     display: flex;
@@ -103,6 +104,10 @@
 
 @media screen and (min-width: 768px) {
     
+    .title h1{
+        font-size: 2rem;
+    }
+
     #contact-form form {
         max-width: 70vw;
     }
@@ -117,6 +122,11 @@
 /* Start of responsive design - Desktop */
 
 @media screen and (min-width: 1025px) {
+
+    .title h1{
+        font-size: 3rem;
+    }
+
     #desktop-container {
         display: flex;
         align-items: center;
