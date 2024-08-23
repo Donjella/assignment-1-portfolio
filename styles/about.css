@@ -2,6 +2,10 @@ main a {
     color: var(--primary-link);
 }
 
+main a:not(.icons){
+    font-size: 1.5rem;
+}
+
 #article-1 {
     color: white;
     font-weight: 600;
@@ -16,26 +20,26 @@ main a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: auto;
+    margin: 20px auto 0;
     width: 80vw;
     border: solid 2px var(--primary-color);
     padding: 10px;
     border-radius: 25px;
-    height: 40vh;
+    height: 42vh;
     text-align: center;
     background-color: var(--primary-background);
 }
 
 #about-container h1 {
     font-family: "Teko", Arial, Helvetica, sans-serif;
-    font-weight: 600;
+    font-weight: 800;
     width: 60vw;
+    margin-top: 18px;
 }
 
 #about-container p {
     font-size: 20px;
-    /* margin: 0; */
-    margin-top: 18px;
+    margin: 18px 0;
 }
 
 #about-contact {
@@ -46,12 +50,25 @@ main a {
     font-weight: 800;
 }
 
-#about-para-1 {
+aside {
     width: 80vw;
     margin: auto;
     margin-bottom: 18px;
 }
 
-.fa-brands {
-    color: var(--primary-link);
+/* Start responsive design - Services - Tablet */
+@media screen and (min-width: 768px) {
+    #about-container {
+        padding: 10px;
+        height: 40vh;
+    }
+
+    #about-container h1 {
+        font-size: 2rem;
+    }
+
+    #about-container p, aside p {
+        font-size: 1.5rem;
+    }
+
 }
