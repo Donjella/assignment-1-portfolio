@@ -1,0 +1,57 @@
+main a {
+    color: var(--primary-link);
+}
+
+#article-1 {
+    color: white;
+    font-weight: 600;
+}
+
+#article-1 h1 {
+    font-size: 4rem;
+}
+
+#about-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 80vw;
+    border: solid 2px var(--primary-color);
+    padding: 10px;
+    border-radius: 25px;
+    height: 40vh;
+    text-align: center;
+    background-color: var(--primary-background);
+}
+
+#about-container h1 {
+    font-family: "Teko", Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    width: 60vw;
+}
+
+#about-container p {
+    font-size: 20px;
+    /* margin: 0; */
+    margin-top: 18px;
+}
+
+#about-contact {
+    text-align: center;
+    font-family: "Teko", Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-top: 18px;
+    font-weight: 800;
+}
+
+#about-para-1 {
+    width: 80vw;
+    margin: auto;
+    margin-bottom: 18px;
+}
+
+.fa-brands {
+    color: var(--primary-link);
+}
