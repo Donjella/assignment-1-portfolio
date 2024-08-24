@@ -36,8 +36,9 @@ body {
     -webkit-background-clip: text;
     background-clip: text;
     background-image: url(../images/logo-background.jpg);
-    animation: logoAnimation 30s linear;
+    animation: logoAnimation 30s linear infinite, fadeIn 3s;
     background-size: 100px;
+    display: block;
 }
 
 @keyframes logoAnimation {
@@ -52,7 +53,7 @@ body {
 
 @keyframes fadeIn {
     0% {
-        transform: translateY(-80%);
+        transform: translateY(55%);
         opacity: 0;
     }
 
