@@ -482,6 +482,7 @@ footer {
     
      .container-link a{
         line-height: 4px;
+        color: var(--primary-link);
      }
      
     #more-height {
