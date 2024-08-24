@@ -482,7 +482,11 @@ footer {
     
      .container-link a{
         line-height: 4px;
-        color: var(--primary-link);
+     }
+
+     .container-link a:hover {
+        color:#eb6064;
+        }
      }
      
     #more-height {
@@ -496,4 +500,3 @@ footer {
         margin-top: 30px;
       }
     
-}
