@@ -51,42 +51,15 @@ nav ul {
     list-style-type: none;
 }
 
-/* Start of animation */
-
-/* .content-container-list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-} */
-
-/* .animation-content ul{
-    text-align: left;
-    list-style-type: none;
-    -webkit-animation-name: change;
-    -webkit-animation-duration: 8s;
-    -webkit-animation-iteration-count: infinite;
-    animation-name: change;
-    animation-duration: 8s;
-    animation-iteration-count: infinite;
-} */
-
-/* .animation-content {
-    position: absolute;
-    top: 45vh; 
-    padding-left: 10px;
-    text-align: center;
-    transform: translate(-50%, -50%);
-    height: 160px;
-    /* overflow:hidden; */
-    /* font-family: "Inter", Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    line-height: 42px;
-    color: #ecf0f1;
-    color: white;
-  }  */
-
 /* Start of article 1 */
 
+#introduction h1, #introduction h3{
+    color: white;
+}
+
+#introduction h1 {
+    font-weight: 600;
+}
 .title {
     font-family: "Inter", sans-serif;
     /* margin-left: 20px; */
@@ -137,8 +110,77 @@ article h1 {
     font-size: 1.5rem;
 }
 
-#introduction h1{
+/* Start of animation */
+
+.animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -45deg,
+    #ee7752 0%,
+    #e73c7e 29%,
+    #23a6d5 67%,
+    #23d5ab 100%
+  );
+    
+
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 3s linear infinite;
+  animation-direction: reverse;
+  display: inline-block;
+  font-size: 1.5rem;
+}
+
+@keyframes textclip {
+
+    0% {
+        background-position: 20%;
+    }
+
+    40% {background-position: 40%;
+    }
+
+    70% {background-position: 60%;
+    }
+
+    100% {background-position: 100%;
+    }
+}
+
+#hello {
+    font-weight: 900;
+    font-size: 2rem;
+}
+
+
+
+#meet-me {
+    background-image:linear-gradient(135deg, #e73c7e 40%, #ee7752);
+    border: none;
     color: white;
+    padding: 6px;
+    width: 30vw;
+    cursor: pointer;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-top: 10px;
+   
+}
+
+#meet-me:hover {
+    background-image:linear-gradient(135deg, #f96dac 40%, #f3a17e);
+}
+
+#profile-intro h3{
+    margin-top: 0px;
 }
 
 /* Start of article 2 - Projects */
@@ -265,16 +307,12 @@ footer {
         gap: 50px;
     }
     
-    #introduction h1{
-        margin: 0;
-        max-width: 30vw;
-    }
+    
 
     #introduction p{
         max-width: 30vw;
     }
 
-    
 
     #article-1 img {
         max-width: 30vw;
@@ -321,10 +359,11 @@ footer {
     /* Start of article-1 - Desktop - Profile */
     
     
-    
-    /* #article-1 > * {
-        flex-basis: 100%;
-    } */
+
+    #meet-me {
+        width: 15vw;
+        margin: 24px 0 24px;
+    }
 
     #article-1 img {
         max-width: 20vw;
