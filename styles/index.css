@@ -53,12 +53,37 @@ nav ul {
 
 /* Start of animation */
 
-.content-container-list {
+/* .content-container-list {
     margin: 0;
     padding: 0;
     list-style: none;
-    
-}
+} */
+
+/* .animation-content ul{
+    text-align: left;
+    list-style-type: none;
+    -webkit-animation-name: change;
+    -webkit-animation-duration: 8s;
+    -webkit-animation-iteration-count: infinite;
+    animation-name: change;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+} */
+
+/* .animation-content {
+    position: absolute;
+    top: 45vh; 
+    padding-left: 10px;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    height: 160px;
+    /* overflow:hidden; */
+    /* font-family: "Inter", Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    line-height: 42px;
+    color: #ecf0f1;
+    color: white;
+  }  */
 
 /* Start of article 1 */
 
