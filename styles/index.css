@@ -35,20 +35,32 @@ body {
     -webkit-text-stroke: 1px #7512d7;
     -webkit-background-clip: text;
     background-clip: text;
-    background-image: url(https://images.unsplash.com/photo-1545537619-3b5475acd977?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-    animation: logoAnimation 30s linear;
+    background-image: url(../images/logo-background.jpg);
+    animation: logoAnimation 30s linear infinite, fadeIn 3s;
     background-size: 100px;
 }
 
 @keyframes logoAnimation {
     0% {
         background-position: 0;
+        
     }
     to {
         background-position: 100%;
     }
 }
 
+@keyframes fadeIn {
+    0% {
+        transform: translateY(-80%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+} 
 
 nav ul a{
     text-decoration: none;
