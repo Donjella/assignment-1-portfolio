@@ -26,6 +26,10 @@ body {
     padding-top: 15px;
 }
 
+#page-top a{
+    text-decoration: none;
+}
+
 #logo {
     font-size: 2em;
     font-family: sans-serif;
@@ -36,7 +40,7 @@ body {
     -webkit-background-clip: text;
     background-clip: text;
     background-image: url(../images/logo-background.jpg);
-    animation: fadeIn 5s, logoAnimation 30s linear infinite;
+    animation: fadeIn 3s, logoAnimation 30s linear infinite;
     background-size: 100px;
     display: block;
 }
@@ -84,8 +88,9 @@ nav ul {
 nav li:hover {
     text-decoration: solid underline #f72585  4px;
     text-underline-offset: 8px;
-    transform: scale(1.2)
+    transform: scale(1.2);
 }
+
 
 /* Start of article 1 */
 
@@ -141,7 +146,7 @@ nav li:hover {
 .items h3 {
     color:var(--primary-link);
     margin: 0;
-    padding: 4px;
+    padding: 10px 10px 12px ;
 }
 
 article h1 {
