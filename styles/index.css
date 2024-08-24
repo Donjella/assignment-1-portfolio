@@ -127,13 +127,6 @@ nav li:hover {
     font-family: "Inter", sans-serif;
 }
 
-.container-link a {
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 20px;
-    font-family: "Inter", sans-serif;
-    text-align: center;
-}
 
 .items {
     display: flex;
@@ -144,6 +137,7 @@ nav li:hover {
     color:var(--primary-link);
     margin: 0;
     padding: 10px 10px 12px ;
+    line-height: 24px;
 }
 
 article h1 {
@@ -211,21 +205,20 @@ article h1 {
     font-size: 1.5rem;
     font-weight: 800;
     margin-top: 20px;
-    animation: fadeIn 2s;
+    animation: fadeIn 3s;
     display: inline-block;
     text-decoration: none;
 }
 
-#meet-me a{
-    
-}
 
 @keyframes fadeIn {
     0% {
         transform: translateX(-55%);
         opacity: 0;
     }
-
+    50% {
+        transform: scale(1.3);
+    }
     100% {
         transform: translateX(0);
         opacity: 1;
@@ -239,6 +232,7 @@ article h1 {
 #profile-intro h3{
     margin-top: 0px;
 }
+
 
 /* Start of article 2 - Projects */
 
@@ -282,6 +276,16 @@ article h1 {
     width: 70%;
     font-size: 20px;
     background-color: var(--primary-background);
+    padding: 8px;
+}
+
+.container-link a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 20px;
+    font-family: "Inter", sans-serif;
+    text-align: center;
+    color: var(--primary-link);
 }
 
 .icons {
@@ -449,7 +453,7 @@ footer {
     }
 
     #container-2 img {
-        width: 18vw;
+        width: 20vw;
         height: 28vh;
     }
     
@@ -476,7 +480,13 @@ footer {
         font-size: 30px;
      }
     
+     .container-link a{
+        line-height: 4px;
+     }
      
+    #more-height {
+        margin-top: 12px;
+    }
 
      
       /* Start of footer - Desktop */
