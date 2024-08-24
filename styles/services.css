@@ -21,6 +21,14 @@
     text-align: center;
     padding: 10px;
 }
+
+.services-section h2 {
+  color: transparent;
+  background-image:linear-gradient(45deg, #b5179e 40%, #f72585);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
 .services-container {
     display: flex;
     flex-direction: column;
@@ -38,6 +46,9 @@
   height: 73.5px;
 }
 
+.items p {
+  color: var(--primary-link);
+}
 
 /* Start responsive design - Services - Tablet */
 @media screen and (min-width: 768px) {
