@@ -31,6 +31,7 @@
     margin-bottom: 5px;
     font-size: 28px;
     font-family: "Teko", Arial, Helvetica, sans-serif;
+    margin-top: 5px;
 }
 
 #hear-about-me {
@@ -57,13 +58,25 @@
     padding: 5px;
     border: 1px solid white;
     margin-top: 5px;
+    font-weight: 600;
+    font-size: 1.1rem;
 }
 
 #submit-button:hover{
     cursor: pointer;
+    background-image:linear-gradient(135deg, #f96dac 40%, #f3a17e);
 }
 
+.form-element input:focus, .form-element textarea:focus {
+    box-shadow: 0px 0px 2px 2px rgba(247,37,133,0.58) inset;
+    -webkit-box-shadow: 0px 0px 2px 2px rgba(247,37,133,0.58) inset;
+    -moz-box-shadow: 0px 0px 2px 2px rgba(247,37,133,0.58) inset;
+}
 
+#hear-about-me{
+    min-height: 40px;
+    line-height: 40px;
+}
 
 /* Start of more ways to contact me */
 #more-contact {
@@ -78,13 +91,19 @@
 #more-contact h3{
     text-align: center;
     font-family: "Teko", Arial, Helvetica, sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
 }
 
 #social-links-container {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    
+}
+
+#social-links-container a {
+    text-decoration: none;
+    color: var(--primary-link);
 }
 
 .social-links {
@@ -99,24 +118,56 @@
 }
 
 .social-text {
-    color: var(--primary-link);
     font-weight: 700;
     font-size: 20px;
     font-family: "Inter", sans-serif;
-    text-decoration: none;
 }
 
-#hear-about-me{
-    min-height: 40px;
-    line-height: 40px;
+.fa-3x {
+    animation: 1.3s infinite;
+    display:inline-block;
 }
 
-.form-element input:focus, .form-element textarea:focus {
-    box-shadow: 0px 0px 2px 2px rgba(247,37,133,0.58) inset;
-    -webkit-box-shadow: 0px 0px 2px 2px rgba(247,37,133,0.58) inset;
-    -moz-box-shadow: 0px 0px 2px 2px rgba(247,37,133,0.58) inset;
+
+.fa-3x:hover {
+    animation-name: slideleft;
+    animation-timing-function: ease;
 }
 
+@keyframes slideleft {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform:translateX(-20px);
+    }
+    100% {
+        transform:translateX(0);
+    }
+}
+
+.social-text {
+    animation: 1.3s infinite;
+    display:inline-block;
+}
+
+
+.social-text:hover {
+    animation-name: slideright;
+    animation-timing-function: ease;
+}
+
+@keyframes slideright {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform:translateX(20px);
+    }
+    100% {
+        transform:translateX(0);
+    }
+}
 /* Start of responsive design - Tablet */
 
 @media screen and (min-width: 768px) {
@@ -132,6 +183,16 @@
     #more-contact {
         max-width: 50vw;
     }
+
+    .social-links > .fa-brands {
+        margin-left: 140px;
+    }
+    
+    .social-text {
+        margin-right: 130px;
+        text-align: center;
+    }
+
 
 }
 
