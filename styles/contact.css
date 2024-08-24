@@ -15,6 +15,7 @@
     border-radius: 25px;
     color: white;
 }
+
 .form-element {
     display: flex; 
     flex-direction: column;
@@ -58,6 +59,11 @@
     margin-top: 5px;
 }
 
+#submit-button:hover{
+    cursor: pointer;
+}
+
+
 
 /* Start of more ways to contact me */
 #more-contact {
@@ -98,6 +104,17 @@
     font-size: 20px;
     font-family: "Inter", sans-serif;
     text-decoration: none;
+}
+
+#hear-about-me{
+    min-height: 40px;
+    line-height: 40px;
+}
+
+.form-element input:focus, .form-element textarea:focus {
+    box-shadow: 0px 0px 2px 2px rgba(247,37,133,0.58) inset;
+    -webkit-box-shadow: 0px 0px 2px 2px rgba(247,37,133,0.58) inset;
+    -moz-box-shadow: 0px 0px 2px 2px rgba(247,37,133,0.58) inset;
 }
 
 /* Start of responsive design - Tablet */
@@ -160,9 +177,6 @@
     #contact-form form {
         width: 50vw
     }
-    #hear-about-me{
-        height: 32px;
-    }
 
     #message, #subject, #hear-about-me {
         width: 90%;
@@ -171,4 +185,10 @@
     #fname, #lname {
         width: 50%;
     }
+
+    #hear-about-me {
+        /* width: 25vw; */
+        padding: 5px;
+    }
+
 }

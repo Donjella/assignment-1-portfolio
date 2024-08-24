@@ -71,13 +71,13 @@ hr {
     gap: 10px;
 }
 
-.fa-brands, .fa-solid {
+.fa-2x, .fa-solid {
     animation: 1.2s infinite;
     transform-origin: bottom;
     display: inline-block;
 }
 
-.fa-brands:hover, .fa-solid:hover {
+.fa-2x:hover, .fa-solid:hover {
     animation-name: bouncey;
     animation-timing-function: ease;
 }

@@ -69,13 +69,12 @@ aside {
     text-underline-offset: 8px;
 }
 
-.icons {
-    animation: 1.2s infinite;
-    transform-origin: bottom;
-    display: inline-block;
+.fa-3x {
+    animation: 1.3s infinite;
+    display:inline-block;
 }
 
-.icons:hover {
+.fa-3x:hover {
     animation-name: bounce;
     animation-timing-function: ease;
 }
