@@ -1,67 +1,106 @@
 
 #article-1 h1 {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 #article-1 {
-    display: flex;
-    align-items: center;
-    height: 73.5px; 
+  display: flex;
+  align-items: center;
+  height: 73.5px; 
 }
 
 .services-section {
-    border: 2px solid var(--primary-color);
-    background-color: var(--primary-background);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 60vw;
-    margin: 0 auto 50px;
-    border-radius: 25px;
-    text-align: center;
-    padding: 10px;
+  border: 2px solid var(--primary-color);
+  background-color: var(--primary-background);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60vw;
+  margin: 0 auto 50px;
+  border-radius: 25px;
+  text-align: center;
+  padding: 10px;
 }
 
 .services-section h2 {
-  color: transparent;
-  background-image:linear-gradient(45deg, #b5179e 40%, #f72585);
-  -webkit-background-clip: text;
-  background-clip: text;
+color: transparent;
+background-image:linear-gradient(45deg, #b5179e 40%, #f72585);
+-webkit-background-clip: text;
+background-clip: text;
 }
 
 .services-container {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 5px;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: center;
 }
 
 .fa-brands {
-  font-size: 70px;
+font-size: 70px;
 }
 
 .icons img {
-  width: 70px;
-  height: 73.5px;
+width: 70px;
+height: 73.5px;
 }
 
 
 /* Start responsive design - Services - Tablet */
 @media screen and (min-width: 768px) {
+.services-container {
+  font-size: 25px;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 100px;
+}
+
+.services-wrapper img{
+  height: 94.5px;
+}
+
+.services-section {
+  width: 90vw;
+}
+
+.fa-brands {
+  width: 70px;
+  font-size: 45px;
+}
+
+.icons img {
+  width: 50px;
+  height: 40px;
+}
+
+}
+
+/* Start responsive design - Services - Desktop */
+@media screen and (min-width: 1025px) {
+ 
+  #article-1 h1 {
+      font-size: 3rem;
+  }
+  
+  .title h1 {
+    font-size: 2rem;
+  }
+
+  .icons img{
+      height: 72.5px;
+  }
+
   .services-container {
-    font-size: 25px;
-    flex-direction: row;
-    justify-content: space-evenly;
-    gap: 100px;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 5px;
   }
 
-  .services-wrapper img{
-    height: 94.5px;
-  }
-
-  .services-section {
-    width: 90vw;
+  .services-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
   }
 
   .fa-brands {
@@ -74,51 +113,12 @@
     height: 40px;
   }
 
-}
-
-/* Start responsive design - Services - Desktop */
-@media screen and (min-width: 1025px) {
-   
-    #article-1 h1 {
-        font-size: 3rem;
-    }
-    
-    .title h1 {
-      font-size: 2rem;
-    }
-
-    .icons img{
-        height: 72.5px;
-    }
-
-    .services-container {
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 5px;
-    }
-
-    .services-wrapper {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-    }
-
-    .fa-brands {
-      width: 70px;
-      font-size: 45px;
-    }
-
-    .icons img {
-      width: 50px;
-      height: 40px;
-    }
-
-    .services-section{
-      width: 300px;
-      margin: 0;
-    }
+  .services-section{
+    width: 300px;
+    margin: 0;
+  }
 
 } 
 
 
-    
+  
