@@ -42,10 +42,17 @@ font-size: 70px;
 }
 
 .icons img {
-width: 33vw;;
+width: 70px;
 height: 73.5px;
 }
 
+.services-image {
+min-width: 240px;
+}
+
+.items h4 {
+  line-height: 2px;
+}
 
 /* Start responsive design - Services - Tablet */
 @media screen and (min-width: 768px) {
