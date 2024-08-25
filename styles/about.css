@@ -4,7 +4,7 @@ main a {
 
 
 #article-1 {
-    color: white;
+    color: var(--primary-text);
     font-weight: 600;
 }
 

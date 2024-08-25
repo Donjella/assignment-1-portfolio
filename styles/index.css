@@ -193,7 +193,7 @@ article h1 {
 #meet-me {
     background-image:linear-gradient(135deg, #e73c7e 40%, #ee7752);
     border: none;
-    color: white;
+    color: var(--primary-text);
     padding: 6px;
     width: 30vw;
     cursor: pointer;
