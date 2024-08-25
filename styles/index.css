@@ -40,20 +40,19 @@ body {
     -webkit-background-clip: text;
     background-clip: text;
     background-image: url(../images/logo-background.jpg);
-    animation: logoAnimation 35s linear infinite;
+    animation: logoAnimation 40s linear infinite;
     background-size: 100px;
     display: block;
 }
 
 @keyframes logoAnimation {
     0% {
-        background-position: 0;
+        background-position: 0%;
     }
-    to {
+    100% {
         background-position: 100%;
     }
 }
-
 
 nav ul a{
     text-decoration: none;
