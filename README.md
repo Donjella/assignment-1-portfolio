@@ -7,7 +7,7 @@ This is my first portfolio website attempt made with HTML and CSS as part of Cod
 ## Overview
 This portfolio website consists of 5 pages. Namely, the home/index page, about me, services, projects and contact me. A HTML and CSS [Validator](https://validator.w3.org) was used  to ensure they are syntactically and semantically valid.
 
-A cohesive visual theme is also achieved using a collection of font and color setting. The website uses a split-complemenatry color scheme to create a high-contrast color combination but yet maintain a clean, professional look. These predominantly used colors are declared as variables in the `:root` element/selector to ensure implementation of a 'theme'. Fonts are curated based on aesthetic purposes but also for accessibility. 
+A cohesive visual theme is also achieved using a collection of font and color setting. The website uses a split-complemenatry color scheme to create a high-contrast color combination but yet maintain a clean, professional look. These predominantly used colors are declared as variables in the `:root` element/selector to ensure implementation of a 'theme'. It also shares a consistent header, footer, navigation bar and main content sections in all pages. Finally, curated fonts for the website are based on aesthetic purposes but also for accessibility. 
 
 ### Accessibility
 Here are *some* accessibility highlights of the website. 
