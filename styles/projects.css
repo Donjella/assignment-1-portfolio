@@ -135,12 +135,15 @@ hr {
     }
 
     .project-container img {
-        width: 30vw;
-        height: 25vh;
+        width: 28vw;
+        height: 45vh;
     }
 
+}
+    
 /* Start of responsive design - Desktop */
 
+@media screen and (min-width: 1025px) {
     .project-container {
         align-items: center;
         gap: 40px;
@@ -149,7 +152,7 @@ hr {
 
     .project-container img {
         width: 25vw;
-        height: 35vh;
+        height: 30vh;
     }
 
     .project-container p{   
