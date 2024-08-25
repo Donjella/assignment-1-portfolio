@@ -37,7 +37,7 @@ Here are *some* accessibility highlights of the website.
 
 
 ## Photo credits
-[Logo background image for animation](https://unsplash.com/photos/a-close-up-of-a-jellyfish-in-the-water-V9ngWVWFiMQ)  
+[Background image for logo animation](https://unsplash.com/photos/a-close-up-of-a-jellyfish-in-the-water-V9ngWVWFiMQ)  
 [Project Placeholder Image](https://unsplash.com/photos/laptop-computer-on-glass-top-table-hpjSkU2UYSU?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash)  
 [Frontend Image on Services page](https://unsplash.com/photos/a-computer-screen-with-a-keyboard-and-a-box-with-a-logo-YOEHA0Ou8ZY?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash)  
 [Backend Image on Services page](https://unsplash.com/photos/graphical-user-interface-qaedPly-Uro?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash)  
